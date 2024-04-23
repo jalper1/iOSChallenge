@@ -17,8 +17,8 @@ struct MealListView: View {
     @State var meals: [Meal] = []  // Variable to store the fetched meals
     @State var isLoading = true    // State to track data loading
 
-    var body: some View { // displays components on the screen
-        NavigationView { // allows for clickable buttons on each dessert
+    var body: some View {
+        NavigationView { // allows for clickable links for each dessert
             // lists each dessert, their name, and their thumbnail image as a clickable NavLink
             List(meals, id: \.idMeal) { meal in
                 NavigationLink(destination: MealDetailView(mealId: meal.idMeal)) {
@@ -29,11 +29,14 @@ struct MealListView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 50, height: 50)
+                                    .accessibilityLabel(meal.strMeal)
                             } placeholder: {
                                 ProgressView() // adds a placeholder loading symbol for when the image has not fully loaded in
                             }
                         }
                         Text(meal.strMeal) // displays the name of the meal
+                            .font(.system(size: 24))
+                            .padding(.leading)
                     }
                 }
                 .accessibility(identifier: meal.strMeal)

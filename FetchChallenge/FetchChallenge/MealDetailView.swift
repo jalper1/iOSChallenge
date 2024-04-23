@@ -6,14 +6,12 @@ struct MealDetail: Decodable {
     let mealName: String
     var ingredients: [String] = []
     let instructions: String
-    let youtubeLink: String?
     let sourceLink: String?
 
     // map variables to parts of the JSON object
     enum CodingKeys: String, CodingKey {
         case mealName = "strMeal"
         case instructions = "strInstructions"
-        case youtubeLink = "strYoutube"
         case sourceLink = "strSource"
     }
     // creates instance from data
@@ -21,7 +19,6 @@ struct MealDetail: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         mealName = try container.decode(String.self, forKey: .mealName)
         instructions = try container.decode(String.self, forKey: .instructions)
-        youtubeLink = try container.decodeIfPresent(String.self, forKey: .youtubeLink)
         sourceLink = try container.decodeIfPresent(String.self, forKey: .sourceLink)
         
 
@@ -39,22 +36,6 @@ struct MealDetail: Decodable {
                 ingredients.append("\(measurement) \(ingredient)")
             }
         }
-    }
-}
-
-// Struct to load youtube video web view
-struct WebView: UIViewRepresentable {
-    let url: URL
-    
-    // makes a WebView
-    func makeUIView(context: Context) -> WKWebView {
-        WKWebView()
-    }
-
-    // Loads the Youtube link into the UIView
-    func updateUIView(_ uiView: WKWebView, context: Context) {
-        let request = URLRequest(url: url)
-        uiView.load(request)
     }
 }
 
@@ -92,16 +73,6 @@ struct MealDetailView: View {
                     // displays out the instruction string
                     Text(meal.instructions)
                         .padding()
-                    
-                    // Embeds youtube video page if there is a link
-                    if let youtubeLink = meal.youtubeLink,
-                       let youtubeURL = URL(string: youtubeLink), !youtubeLink.isEmpty {
-                        WebView(url: youtubeURL)
-                            .frame(height: 170)
-                            .offset(y: -40)
-                            .clipped()
-                            .padding()
-                    }
                     
                     // Display the clickable link only if it's valid
                     if let sourceLink = meal.sourceLink,
