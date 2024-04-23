@@ -10,7 +10,7 @@ import XCTest
 
 final class MealListTests: XCTestCase {
     
-    // Test the successful decoding of a valid JSON response
+    // Test the decoding of a valid JSON response
     func testFetchMealsValidResponse() {
         let json = """
         {
