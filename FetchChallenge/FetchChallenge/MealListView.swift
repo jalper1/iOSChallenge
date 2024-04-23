@@ -14,26 +14,29 @@ struct MealResponse: Decodable {
 
 // loads and displays meals
 struct MealListView: View {
-    @State private var meals: [Meal] = []  // Variable to store the fetched meals
-    @State private var isLoading = true    // State to track data loading
+    @State var meals: [Meal] = []  // Variable to store the fetched meals
+    @State var isLoading = true    // State to track data loading
 
     var body: some View { // displays components on the screen
         NavigationView { // allows for clickable buttons on each dessert
             // lists each dessert, their name, and their thumbnail image as a clickable NavLink
             List(meals, id: \.idMeal) { meal in
                 NavigationLink(destination: MealDetailView(mealId: meal.idMeal)) {
-                    if let imageUrl = URL(string: meal.strMealThumb) {
-                        AsyncImage(url: imageUrl) { image in // displays the thumbnail image
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
-                        } placeholder: {
-                            ProgressView() // adds a placeholder loading symbol for when the image has not fully loaded in
+                    HStack{
+                        if let imageUrl = URL(string: meal.strMealThumb) {
+                            AsyncImage(url: imageUrl) { image in // displays the thumbnail image
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50, height: 50)
+                            } placeholder: {
+                                ProgressView() // adds a placeholder loading symbol for when the image has not fully loaded in
+                            }
                         }
+                        Text(meal.strMeal) // displays the name of the meal
                     }
-                    Text(meal.strMeal) // displays the name of the meal
                 }
+                .accessibility(identifier: meal.strMeal)
                 .foregroundColor(Color.orange)
 
             }

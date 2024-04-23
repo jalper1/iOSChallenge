@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		317AAA5D2BD75F4200BEBF52 /* MealDetailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317AAA5C2BD75F4200BEBF52 /* MealDetailViewUITests.swift */; };
 		31D3E7252BD349D000B724EC /* FetchChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7242BD349D000B724EC /* FetchChallengeApp.swift */; };
 		31D3E7272BD349D000B724EC /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7262BD349D000B724EC /* MealListView.swift */; };
 		31D3E7292BD349D100B724EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D3E7282BD349D100B724EC /* Assets.xcassets */; };
 		31D3E72D2BD349D100B724EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D3E72C2BD349D100B724EC /* Preview Assets.xcassets */; };
-		31D3E7372BD349D100B724EC /* FetchChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7362BD349D100B724EC /* FetchChallengeTests.swift */; };
-		31D3E7412BD349D100B724EC /* FetchChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7402BD349D100B724EC /* FetchChallengeUITests.swift */; };
+		31D3E7372BD349D100B724EC /* MealListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7362BD349D100B724EC /* MealListTests.swift */; };
+		31D3E7412BD349D100B724EC /* MealListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7402BD349D100B724EC /* MealListViewUITests.swift */; };
 		31D3E7432BD349D100B724EC /* FetchChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7422BD349D100B724EC /* FetchChallengeUITestsLaunchTests.swift */; };
 		31D3E7522BD3517500B724EC /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D3E7512BD3517500B724EC /* MealDetailView.swift */; };
+		31EE57F52BD759440065118F /* MealDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE57F42BD759440065118F /* MealDetailTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		317AAA5C2BD75F4200BEBF52 /* MealDetailViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewUITests.swift; sourceTree = "<group>"; };
 		31D3E7212BD349D000B724EC /* FetchChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D3E7242BD349D000B724EC /* FetchChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeApp.swift; sourceTree = "<group>"; };
 		31D3E7262BD349D000B724EC /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
@@ -42,11 +45,12 @@
 		31D3E72A2BD349D100B724EC /* FetchChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FetchChallenge.entitlements; sourceTree = "<group>"; };
 		31D3E72C2BD349D100B724EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31D3E7322BD349D100B724EC /* FetchChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31D3E7362BD349D100B724EC /* FetchChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeTests.swift; sourceTree = "<group>"; };
+		31D3E7362BD349D100B724EC /* MealListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTests.swift; sourceTree = "<group>"; };
 		31D3E73C2BD349D100B724EC /* FetchChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31D3E7402BD349D100B724EC /* FetchChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeUITests.swift; sourceTree = "<group>"; };
+		31D3E7402BD349D100B724EC /* MealListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewUITests.swift; sourceTree = "<group>"; };
 		31D3E7422BD349D100B724EC /* FetchChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		31D3E7512BD3517500B724EC /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		31EE57F42BD759440065118F /* MealDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,8 @@
 		31D3E7352BD349D100B724EC /* FetchChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				31D3E7362BD349D100B724EC /* FetchChallengeTests.swift */,
+				31D3E7362BD349D100B724EC /* MealListTests.swift */,
+				31EE57F42BD759440065118F /* MealDetailTests.swift */,
 			);
 			path = FetchChallengeTests;
 			sourceTree = "<group>";
@@ -126,7 +131,8 @@
 		31D3E73F2BD349D100B724EC /* FetchChallengeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				31D3E7402BD349D100B724EC /* FetchChallengeUITests.swift */,
+				31D3E7402BD349D100B724EC /* MealListViewUITests.swift */,
+				317AAA5C2BD75F4200BEBF52 /* MealDetailViewUITests.swift */,
 				31D3E7422BD349D100B724EC /* FetchChallengeUITestsLaunchTests.swift */,
 			);
 			path = FetchChallengeUITests;
@@ -203,6 +209,7 @@
 					};
 					31D3E7312BD349D100B724EC = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 						TestTargetID = 31D3E7202BD349D000B724EC;
 					};
 					31D3E73B2BD349D100B724EC = {
@@ -272,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D3E7372BD349D100B724EC /* FetchChallengeTests.swift in Sources */,
+				31D3E7372BD349D100B724EC /* MealListTests.swift in Sources */,
+				31EE57F52BD759440065118F /* MealDetailTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D3E7412BD349D100B724EC /* FetchChallengeUITests.swift in Sources */,
+				317AAA5D2BD75F4200BEBF52 /* MealDetailViewUITests.swift in Sources */,
+				31D3E7412BD349D100B724EC /* MealListViewUITests.swift in Sources */,
 				31D3E7432BD349D100B724EC /* FetchChallengeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +313,6 @@
 		31D3E7442BD349D100B724EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -359,13 +367,13 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
 			name = Debug;
 		};
 		31D3E7452BD349D100B724EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -412,6 +420,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
 			name = Release;
 		};
@@ -492,6 +501,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -503,6 +513,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchChallenge";
@@ -514,6 +525,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
